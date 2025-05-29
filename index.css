@@ -1,0 +1,125 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    background-color: rgb(219, 219, 255);
+    margin: 0pt 5pt;
+}
+
+div{
+    border-radius: 5pt;
+}
+
+.top1 {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(163, 163, 167);
+    margin: 5pt 0pt;
+    padding: 5pt 0pt;
+}
+
+nav li {
+    display: inline;
+    margin:  0pt 5pt;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+div.top2 img {
+    width: 50pt;
+    border-radius: 50%;
+}
+
+.top2 {
+    background-image: url(images/bgpic5.PNG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 5pt 0pt;
+    padding: 60pt 0pt;
+    font-size: 2.0em;
+}
+
+div.container {
+    display: grid;
+    align-items: center;
+    margin: 5pt;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+div#picture1 {
+    background-image: url(images/bgpic4.PNG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+div.individual {
+    background-color: rgb(194, 194, 201);
+    height: 100pt;
+    margin: 10pt;
+    align-content: center;
+}
+
+div#picture2 {
+    background-image: url(images/bgpic2.PNG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bottom {
+    background-color: rgb(133, 133, 153);
+    margin-bottom: 5pt;
+    padding: 10pt 0pt;
+}
+
+
+
+@media (max-width: 1080px) {
+    body {
+        font-size: 0.9em;
+    }
+
+    div.top2 img {
+        width: 35pt;
+    }
+    
+    .top2 {
+        padding: 40pt 0pt;
+        font-size: 1.5em;
+    }
+}
+
+
+@media (max-width: 540px) {
+    body {
+        font-size: 0.8em;
+    }
+
+    div.top2 img {
+        width: 20pt;
+    }
+    
+    .top2 {
+        padding: 20pt 0pt;
+        font-size: 1em;
+    }
+
+    div.container {
+        display: block;
+        align-items: center;
+        margin: 5pt;
+    }
+}

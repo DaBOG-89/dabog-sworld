@@ -1,0 +1,191 @@
+* {
+    margin: 0pt;
+    padding: 0pt;
+}
+
+body {
+    background-color: rgb(231, 214, 247);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    /**border: 2pt solid greenyellow;**/
+    display: flex;
+}
+
+.leftside, .rightside {
+    /**border: 1pt solid goldenrod;**/
+    margin: 5pt;
+}
+
+.leftside {
+    flex: 35%;
+}
+
+.leftside img {
+    border-radius: 50%;
+    width: 40pt;
+    margin: 0pt 0pt 0pt 5pt;
+   
+}
+
+.leftside header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(186, 184, 189);
+    /**margin: 5pt 0pt 0pt 0pt;**/
+    padding: 10pt 0pt;
+}
+
+.leftside header h1 {
+    margin: 0pt 5pt;
+    font-size: 20pt;
+}
+
+.leftside nav {
+    background-color: rgb(165, 140, 140);
+    margin: 5pt 0pt;
+    padding: 2pt 0pt; 
+}
+
+.leftside nav ul {
+    display: flex;
+    text-align: center;
+    list-style: none;
+    justify-content: center;
+}
+
+.leftside nav ul li {
+    margin: 0pt 5pt;
+    font-weight: bold;
+}
+
+.leftside main {
+    background-image: url(images/studio.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 55pt 0pt;
+    color: rgb(173, 171, 177);
+    font-size: 50pt;
+    text-align: center;
+}
+
+.leftside footer {
+    background-color: rgb(186, 184, 189);
+    margin: 5pt 0pt 0pt 0pt;
+    padding: 5pt 0pt;
+}
+
+.leftside footer p {
+    margin: 0pt 5pt;
+    text-align: center;
+    font-weight: bold;
+}
+
+.leftside * {
+    border-radius: 5pt;
+}
+
+.rightside {
+    flex: 65%;
+    /**border: 1pt solid goldenrod;**/
+    /**background-color: rgb(186, 184, 189);**/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5pt;
+    /**background-image: url(images/teachyourself.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;**/
+}
+
+.rightside section {
+    /**border: 2pt solid blue;**/
+    text-align: center;
+    margin: 5pt 5pt;
+    padding: 32pt 0pt;
+    font-weight: bold;
+}
+
+section.theory {
+    /**background-image: url(images/theory.png);**/
+    background-image: url(images/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+section.piano {
+    /**background-image: url(images/piano.png);**/
+    background-image: url(images/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+section.violin {
+    /**background-image: url(images/violin.png);**/
+    background-image: url(images/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+section.guitar {
+    /**background-image: url(images/guitar.png);**/
+    background-image: url(images/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.rightside * {
+    border-radius: 5pt;
+}
+
+@media (max-width: 1200px) {
+    .leftside header h1 {
+        font-size: 16pt;
+    }
+
+    .leftside nav ul li {
+        font-size: 10pt;
+    }
+
+    .leftside main {
+        padding: 45pt 0pt;
+        font-size: 35pt;
+    }
+
+    .rightside section {
+        padding: 25pt 0pt;  
+        font-size: 10pt;    
+    }
+
+    .leftside footer p {
+        font-size: 10pt;;
+    }
+}
+
+@media (max-width: 600px) {
+    .leftside main {
+        padding: 40pt 0pt;
+        font-size: 30pt;
+    }
+
+    .container {
+        flex-direction: column;      
+    }
+}

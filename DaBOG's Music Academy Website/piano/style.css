@@ -1,0 +1,7 @@
+body {
+    background-image: url(../images/pianoacademy.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    color: rgb(207, 10, 10);
+}

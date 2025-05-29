@@ -1,0 +1,7 @@
+body {
+    background-image: url(../images/guitaracademy.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    color: rgb(168, 5, 5);
+}
